@@ -7,13 +7,13 @@
     
     window.addEventListener("resize", function(){
       document.querySelector('h2').textContent = document.body.scrollHeight;
+});
       
       function handleClick() {
         document.querySelector('#panel').style.display = 'block';
+        document.querySelector('h2').textContent = document.body.scrollHeight;
         window.parent.postMessage('resized','*');
       }
-      
-});
   </script>
 </head>
 <body>
