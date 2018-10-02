@@ -7,13 +7,19 @@
     
     window.addEventListener("resize", function(){
       document.querySelector('h2').textContent = document.body.scrollHeight;
+      
+      function handleClick() {
+        document.querySelector('#panel').style.display = 'block';
+        window.parent.postMessage('resized','*');
+      }
+      
 });
   </script>
 </head>
 <body>
 <h1>iframe contents</h1>
   <h2></h2>
-<button onclick="document.querySelector('#panel').style.display = 'block';">Resize</button>
+<button onclick="handleClick()">Resize</button>
   <div id="panel" style="display:none;">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse est mi, fermentum sit amet justo et, hendrerit tincidunt eros. Donec eleifend, velit et molestie auctor, nibh orci posuere felis, nec iaculis mauris mauris quis odio. Morbi varius ullamcorper diam, in fringilla leo rutrum quis. Vivamus velit risus, vestibulum vel porttitor quis, semper non sem. Proin euismod eleifend aliquam. Cras varius erat lorem, vel sagittis dui varius sit amet. Duis pulvinar aliquet purus id ultrices. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
 
