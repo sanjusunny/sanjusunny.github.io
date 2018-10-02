@@ -1,31 +1,17 @@
 <html>
 <head>
   <script>
-    window.addEventListener("onload", function(){
-      document.querySelector('h2').textContent = document.body.scrollHeight;
-});
-    
-    window.addEventListener("resize", function(){
-      document.querySelector('h2').textContent = document.body.scrollHeight;
-});
-      
       function handleClick() {
         document.querySelector('#panel').style.display = 'block';
-        document.querySelector('h2').textContent = document.body.scrollHeight;
         window.parent.postMessage(document.body.scrollHeight,'*');
       }
   </script>
 </head>
 <body>
-<h1>1. iframe contents</h1>
-  <h2></h2>
+<h1>dynamic iframe contents</h1>
 <button onclick="handleClick()">Resize</button>
-  <div id="panel" style="display:none;">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse est mi, fermentum sit amet justo et, hendrerit tincidunt eros. Donec eleifend, velit et molestie auctor, nibh orci posuere felis, nec iaculis mauris mauris quis odio. Morbi varius ullamcorper diam, in fringilla leo rutrum quis. Vivamus velit risus, vestibulum vel porttitor quis, semper non sem. Proin euismod eleifend aliquam. Cras varius erat lorem, vel sagittis dui varius sit amet. Duis pulvinar aliquet purus id ultrices. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-
-Proin augue erat, venenatis a magna at, porttitor dapibus nunc. Maecenas non congue lorem. Aenean eget pulvinar nunc. Vivamus viverra augue nec massa blandit faucibus. Nunc rutrum lacinia mauris et condimentum. Proin mollis sem in elit blandit, et tristique mi vehicula. Aliquam tincidunt mattis dignissim. Ut interdum lectus id purus lobortis, dapibus fermentum metus volutpat. Sed venenatis, est vitae dignissim hendrerit, enim justo faucibus metus, at vestibulum metus est at eros. Cras eu porttitor magna. Pellentesque dictum vehicula diam at fermentum. Donec eu massa ac eros suscipit scelerisque eget sed risus. In sed commodo ipsum. Donec ultrices elit quis nisl dictum, et ornare tellus ultricies.
-
-Phasellus sollicitudin volutpat dignissim. Nunc in erat dictum, tincidunt urna nec, faucibus risus. Quisque nunc erat, eleifend ut magna nec, vulputate ultrices ligula. Suspendisse tristique ultricies nisl, nec vestibulum mauris posuere eget. Duis dictum vitae est sed sodales. Maecenas felis ante, tempus ut odio id, suscipit facilisis metus. Pellentesque et nisl ac diam luctus facilisis. Ut ornare dignissim pellentesque. Maecenas porta justo ac nulla ornare bibendum. Praesent fermentum arcu sed augue fringilla cursus. Etiam consequat efficitur quam et viverra.
-  </div>
-<body>
+<div id="panel" style="display:none;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse est mi, fermentum sit amet justo et, hendrerit tincidunt eros. Donec eleifend, velit et molestie auctor, nibh orci posuere felis, nec iaculis mauris mauris quis odio. Morbi varius ullamcorper diam, in fringilla leo rutrum quis. Vivamus velit risus, vestibulum vel porttitor quis, semper non sem. Proin euismod eleifend aliquam. Cras varius erat lorem, vel sagittis dui varius sit amet. Duis pulvinar aliquet purus id ultrices. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin augue erat, venenatis a magna at, porttitor dapibus nunc. Maecenas non congue lorem. Aenean eget pulvinar nunc. Vivamus viverra augue nec massa blandit faucibus. Nunc rutrum lacinia mauris et condimentum. Proin mollis sem in elit blandit, et tristique mi vehicula. Aliquam tincidunt mattis dignissim. Ut interdum lectus id purus lobortis, dapibus fermentum metus volutpat. Sed venenatis, est vitae dignissim hendrerit, enim justo faucibus metus, at vestibulum metus est at eros. Cras eu porttitor magna. Pellentesque dictum vehicula diam at fermentum. Donec eu massa ac eros suscipit scelerisque eget sed risus. In sed commodo ipsum. Donec ultrices elit quis nisl dictum, et ornare tellus ultricies. Phasellus sollicitudin volutpat dignissim. Nunc in erat dictum, tincidunt urna nec, faucibus risus. Quisque nunc erat, eleifend ut magna nec, vulputate ultrices ligula. Suspendisse tristique ultricies nisl, nec vestibulum mauris posuere eget. Duis dictum vitae est sed sodales. Maecenas felis ante, tempus ut odio id, suscipit facilisis metus. Pellentesque et nisl ac diam luctus facilisis. Ut ornare dignissim pellentesque. Maecenas porta justo ac nulla ornare bibendum. Praesent fermentum arcu sed augue fringilla cursus. Etiam consequat efficitur quam et viverra.
+</div>
+</body>
 </html>
