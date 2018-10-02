@@ -12,7 +12,7 @@
       function handleClick() {
         document.querySelector('#panel').style.display = 'block';
         document.querySelector('h2').textContent = document.body.scrollHeight;
-        window.parent.postMessage('resized','*');
+        window.parent.postMessage(document.body.scrollHeight,'*');
       }
   </script>
 </head>
